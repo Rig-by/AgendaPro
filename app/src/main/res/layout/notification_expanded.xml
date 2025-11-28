@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#FAFAFA">
+
+    <!-- Cabecera con botón cerrar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tus 3 Tareas Más Urgentes"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"/>
+
+        <!-- Botón para MATAR el servicio -->
+        <ImageButton
+            android:id="@+id/btn_close_service"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:background="?android:attr/selectableItemBackground"
+            android:tint="#757575"
+            android:contentDescription="Cerrar panel"/>
+    </LinearLayout>
+
+    <!-- SLOT 1 -->
+    <LinearLayout
+        android:id="@+id/container_note_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@drawable/notification_item_bg"
+        android:layout_marginBottom="4dp"
+        android:visibility="gone"> <!-- Oculto por defecto -->
+
+        <TextView
+            android:id="@+id/text_title_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota 1"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/text_content_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalle nota 1..."
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- SLOT 2 -->
+    <LinearLayout
+        android:id="@+id/container_note_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@drawable/notification_item_bg"
+        android:layout_marginBottom="4dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_title_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota 2"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/text_content_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalle..."
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- SLOT 3 -->
+    <LinearLayout
+        android:id="@+id/container_note_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@drawable/notification_item_bg"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/text_title_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nota 3"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/text_content_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalle..."
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>
